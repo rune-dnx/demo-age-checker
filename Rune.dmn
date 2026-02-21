@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20240513/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20230324/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="https://kie.org/dmn/extensions/1.0" expressionLanguage="https://www.omg.org/spec/DMN/20240513/FEEL/" namespace="https://kie.org/dmn/_5AC03E8E-D05F-4F7C-AD09-B212C05F98A5" id="_FD22B5EE-B952-4ACB-9EA0-0A069E86D181" name="DMN_29466C66-9CCF-4746-BAB3-32CE83BE5865">
+  <decision name="Adult" id="_FCFDA4ED-ACF1-4D93-B580-6E6DEABD30FC">
+    <variable id="_93FC6550-A205-44C9-9ADF-8820D4948C1B" name="Adult" typeRef="string" />
+    <informationRequirement id="_BACECA91-681C-4422-A53F-51C406863918">
+      <requiredInput href="#_AF0BC7E5-0117-460A-B29D-0A5553DD16D5" />
+    </informationRequirement>
+    <conditional id="_7C7697E7-569E-489C-B40A-72A6F6BA41F0" typeRef="string" label="Adult">
+      <if id="_F889EEB4-D2EA-4854-AA1F-B700DE5C03B8">
+        <literalExpression id="_7F5C7072-74A5-4B3A-97C1-27A8F95615ED" label="Expression Name">
+          <text>Age &gt;= 18</text>
+        </literalExpression>
+      </if>
+      <then id="_CBFB206B-2311-43B9-8EBB-D1C89F6DE6F7">
+        <literalExpression id="_735CC341-F244-4092-9081-7681D87A9FF9" label="Expression Name">
+          <text>&quot;Voksen person&quot;</text>
+        </literalExpression>
+      </then>
+      <else id="_F8BEEDE7-1751-4BA8-BB80-D69CBC05040C">
+        <literalExpression id="_ACBDFEEF-9BB6-4E55-A94E-7E547FD0C4B6" label="Expression Name">
+          <text>&quot;Ikke voksen&quot;</text>
+        </literalExpression>
+      </else>
+    </conditional>
+  </decision>
+  <inputData name="Age" id="_AF0BC7E5-0117-460A-B29D-0A5553DD16D5">
+    <variable name="Age" id="_91E0BC99-7692-4FBB-993B-51C51877A72C" typeRef="number" />
+  </inputData>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram id="_7B69A86F-DD78-4171-ABAF-10C3B5A63A1B" name="Default DRD" useAlternativeInputDataShape="false">
+      <di:extension>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_7F5C7072-74A5-4B3A-97C1-27A8F95615ED">
+            <kie:width>419</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_735CC341-F244-4092-9081-7681D87A9FF9">
+            <kie:width>419</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_ACBDFEEF-9BB6-4E55-A94E-7E547FD0C4B6">
+            <kie:width>419</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
+      </di:extension>
+      <dmndi:DMNShape id="_B9F9F11D-9F6E-4435-9F86-07E08E1F5D25" dmnElementRef="_AF0BC7E5-0117-460A-B29D-0A5553DD16D5" isCollapsed="false" isListedInputData="false">
+        <dc:Bounds x="40" y="280" width="160" height="80" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="_6F5C1133-B006-4116-8611-37EA7B1DA956" dmnElementRef="_FCFDA4ED-ACF1-4D93-B580-6E6DEABD30FC" isCollapsed="false" isListedInputData="false">
+        <dc:Bounds x="40" y="80" width="160" height="80" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="_E9FB7CB3-5B9E-47B3-8CCB-331467D48A4E-AUTO-TARGET" dmnElementRef="_BACECA91-681C-4422-A53F-51C406863918" sourceElement="_B9F9F11D-9F6E-4435-9F86-07E08E1F5D25" targetElement="_6F5C1133-B006-4116-8611-37EA7B1DA956">
+        <di:waypoint x="120" y="320" />
+        <di:waypoint x="120" y="120" />
+      </dmndi:DMNEdge>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
