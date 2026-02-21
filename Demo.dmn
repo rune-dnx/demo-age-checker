@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<definitions xmlns="https://www.omg.org/spec/DMN/20240513/MODEL/" expressionLanguage="https://www.omg.org/spec/DMN/20240513/FEEL/" namespace="https://kie.org/dmn/_8F7491C2-1366-4835-8ADC-E97E266D8190" id="_C66F2147-9D04-41DD-BA0E-60C243924A58" name="DMN_934C6872-DEEC-4170-855C-E6B92AC5CCA2" xmlns:dmndi="https://www.omg.org/spec/DMN/20230324/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="https://kie.org/dmn/extensions/1.0">
+<definitions xmlns="https://www.omg.org/spec/DMN/20240513/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20230324/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="https://kie.org/dmn/extensions/1.0" expressionLanguage="https://www.omg.org/spec/DMN/20240513/FEEL/" namespace="https://kie.org/dmn/_8F7491C2-1366-4835-8ADC-E97E266D8190" id="_C66F2147-9D04-41DD-BA0E-60C243924A58" name="DMN_934C6872-DEEC-4170-855C-E6B92AC5CCA2">
   <decision name="Is grownup" id="_DEA18EFC-7041-40FD-9409-C56D63D50505">
     <variable id="_E402B951-FC90-4648-91A7-BC8F94801E49" typeRef="string" name="Is grownup" />
     <informationRequirement id="_DB021DED-585E-4A14-BBEA-3FB718837066">
@@ -41,11 +41,11 @@
         <dc:Bounds x="100" y="300" width="160" height="80" />
       </dmndi:DMNShape>
       <dmndi:DMNShape id="_06285BBB-A374-4515-A507-E4498BEA8D2D" dmnElementRef="_DEA18EFC-7041-40FD-9409-C56D63D50505" isCollapsed="false" isListedInputData="false">
-        <dc:Bounds x="100" y="100" width="160" height="80" />
+        <dc:Bounds x="300" y="60" width="160" height="80" />
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="_572D9637-D769-447D-A86F-AA7F7490DA8F-AUTO-TARGET" dmnElementRef="_DB021DED-585E-4A14-BBEA-3FB718837066" sourceElement="_98138814-E403-4964-AC13-D72DA96D3099" targetElement="_06285BBB-A374-4515-A507-E4498BEA8D2D">
         <di:waypoint x="180" y="340" />
-        <di:waypoint x="180" y="140" />
+        <di:waypoint x="380" y="100" />
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
