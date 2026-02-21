@@ -47,14 +47,14 @@ __if &quot;Age&quot; &gt;= 18__</description>
         </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="_B9F9F11D-9F6E-4435-9F86-07E08E1F5D25" dmnElementRef="_AF0BC7E5-0117-460A-B29D-0A5553DD16D5" isCollapsed="false" isListedInputData="false">
-        <dc:Bounds x="20" y="320" width="160" height="80" />
+        <dc:Bounds x="120" y="240" width="160" height="80" />
       </dmndi:DMNShape>
       <dmndi:DMNShape id="_6F5C1133-B006-4116-8611-37EA7B1DA956" dmnElementRef="_FCFDA4ED-ACF1-4D93-B580-6E6DEABD30FC" isCollapsed="false" isListedInputData="false">
-        <dc:Bounds x="-120" y="60" width="160" height="80" />
+        <dc:Bounds x="120" y="480" width="160" height="80" />
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="_E9FB7CB3-5B9E-47B3-8CCB-331467D48A4E-AUTO-TARGET" dmnElementRef="_BACECA91-681C-4422-A53F-51C406863918" sourceElement="_B9F9F11D-9F6E-4435-9F86-07E08E1F5D25" targetElement="_6F5C1133-B006-4116-8611-37EA7B1DA956">
-        <di:waypoint x="100" y="360" />
-        <di:waypoint x="-40" y="100" />
+        <di:waypoint x="200" y="280" />
+        <di:waypoint x="200" y="520" />
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
